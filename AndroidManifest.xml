@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.microlana.android.alwaysonvpnfix"
+    android:versionCode="5"
+    android:versionName="1.1" 
+    android:installLocation="internalOnly">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- For Chainfire SuperSU application -->
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+
+    <!-- android:theme="@style/AppTheme"  -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/application_title"
+        android:configChanges="orientation"
+        android:screenOrientation="sensor"
+        android:excludeFromRecents="true"
+        android:noHistory="true"
+        android:theme="@style/Theme.UserDialog" >
+        <activity
+            android:name=".PrimaryActivity"
+            android:label="@string/application_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".BootCompletedReceiver"
+        		  android:enabled="true" >
+        	<intent-filter>
+            	<action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            	<action android:name="android.intent.action.BOOT_COMPLETED" />
+        	</intent-filter>
+    	</receiver>
+    	
+        <receiver android:name=".ConnectivityChangeReceiver" 
+            	  android:enabled="true">
+        	<intent-filter>
+              	<action android:name="android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE" />
+        	</intent-filter>
+        </receiver>
+                
+        <service
+            android:name="ru.microlana.android.alwaysonvpnfix.NetworkMonitorService"
+            android:enabled="true"/>
+    </application>
+</manifest>

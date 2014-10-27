@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="application_title">Always-on VPN fix</string>
+
+    <string name="message_primary_description">
+        <![CDATA[<p><h1>This application attempt to fix <a href="https://code.google.com/p/android/issues/detail?id=63450">bug</a> in the standard &quot;Always-on VPN&quot; feature, which present on newest versions of  Android.</h1></p>
+        <p><h1>But since this bug is reside on firewall, to fix it you need a root access.</h1></p>
+        <p></p>
+        <p>Remove this application if you don\'t use &quot;Always-on VPN&quot; feature - you don\'t need this application!</p>
+        <p>Remove this application if you don\'t have root-access for your device - application can\'t work ;\'(</p>
+        <p></p>
+        <p>More information at <a href="http://home.microlana.ru/portfolio/coding/android/java/always-on-vpn-fix">http://home.microlana.ru/portfolio/coding/android/java/always-on-vpn-fix</a>.</p>]]>
+    </string>
+    
+    <string name="message_probe_su">Probe Root access (su).</string>
+    <string name="message_probe_su_complete">Root access (su) is found and usable.</string>
+    <string name="message_fixed_firewall">Firewall bug fixed.</string>
+    <string name="error_root_is_required">Root access (su) is required for this application.</string>
+    <string name="error_iptables_is_required">Firewall control (iptables) is required for this application.</string>
+    <string name="button_apply">Apply</string>
+    <string name="button_cancel">Cancel</string>
+    
+</resources>

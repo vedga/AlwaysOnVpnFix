@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="application_title">Always-on VPN fix</string>
+
+    <string name="message_primary_description">
+        <![CDATA[<p><h1>Приложение исправляет <a href="http://home.microlana.ru/portfolio/coding/android/java/always-on-vpn-fix">ошибку</a> в работе штатной функции &quot;Постоянная VPN&quot;, которая присутствует в последних версиях ОС Android.</h1></p>
+        <p><h1>Для исправления этой ошибки потребуется root-доступ к устройству.</h1></p>
+        <p></p>
+        <p>Удалите данное приложение, если Вы не используете функцию &quot;Постоянная VPN&quot; - оно Вам не нужно!</p>
+        <p>Удалите данное приложение, если Вы не имеете root-доступ к Вашему устройству - приложение работать не будет ;\'(</p>
+        <p></p>
+        <p>Подробности о приложении описаны на <a href="http://home.microlana.ru/portfolio/coding/android/java/always-on-vpn-fix">http://home.microlana.ru/portfolio/coding/android/java/always-on-vpn-fix</a>.</p>]]>
+    </string>
+    
+    <string name="message_probe_su">Проверка возможности получения прав суперпользователя (su).</string>
+    <string name="message_probe_su_complete">Права суперпользователя (su) нам предоставлены.</string>
+    <string name="message_fixed_firewall">Найдена и исправлена ошибка firewall.</string>
+    <string name="error_root_is_required">Для работы приложения необходимы права суперпользователя (su).</string>
+    <string name="error_iptables_is_required">Для работы приложения необходима утилита iptables.</string>
+    <string name="button_apply">Применить</string>
+    <string name="button_cancel">Отмена</string>
+    
+</resources>
